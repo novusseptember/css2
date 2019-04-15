@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+   
+    <title>Mini Page Layout</title>
+    <style>
+    body{
+            background-color: #333;
+            color: #aaa;
+            font-family: Arial;
+            font-size: 20px;
+
+    }
+    a{
+            color:#fff;
+
+    }
+    #border:hover{
+            opacity: 0.5;
+    }
+      a:hover{
+      color:orange;
+      }
+    .col-left{
+            float: left;
+            margin-right: 20px;
+    }
+            
+ .col-right{
+                padding-top: 80px;
+        }
+            
+            
+   
+    .container{
+            width: 900px;
+            margin: 100px auto;
+    }
+    #copyright{
+            text-align: right;
+            margin-top: 150px;
+    }
+    #border{
+            border-right: 5px solid #aaa;
+            box-shadow: 0 0 5px 2px black;
+            opacity: 1;
+                 
+            }
+            /* pseudoselector */
+   
+
+
+    </style>
+</head>
+<body>
+ <div class="container">
+    <header class="col-left">
+            <IMG id="border"src="https://picsum.photos/300/300?image=545" alt="">
+                <h1>Street Magazine</h1>
+            HEADER
+    </header>
+    <section class="col-right ">
+            <h2>Lorem ipsum dolor sit</h2>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellendus, fugiat deserunt iure, praesentium in rerum deleniti similique debitis mollitia architecto id quaerat ducimus sint ut qui facilis odio aliquid labore!/p>
+    </section>
+    <footer id="copyright">
+            copyright &copy; 2019, <a href="#">Author X.</a>
+    </footer>
+</div>
+</body>
+</html>
