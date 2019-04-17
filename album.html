@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Album</title>
+    <style>
+    body{
+        background-color: #333;
+        text-align: center;
+        padding-top: 100px;
+        }
+        figure{
+height: 0;
+margin: 0;
+        }
+        img{
+            border: 20px solid #ddd;
+            box-shadow: 0 0 10px 5px #111;
+        
+        }
+        img:hover{
+            border-color: #fff; 
+        }
+    .left-30{ 
+        transform: translateX(300px) rotate(30deg);
+        /* ca sa fie tranzitia lenta cand se mksca imaginea punem transition */
+        transition: 0.5s;
+    }
+    /* facem animatie-sa treaca de la 30 de grade imaginea la 0 */
+    .left-30:hover{
+        transform: translateX(300px) rotate(0deg);
+        }
+
+    .right-100{ 
+        transform: rotate(0deg) translateX(0px);
+        transition: 0.3s;
+    }
+    .right-100:hover{
+        transform: rotate(-150deg) translateX(-150px);
+    }
+    .left-50{ 
+        transform: rotate(50deg)translateY(100px);
+    }
+    .left-80{
+        transform: rotate(160deg) translateZ(90);
+    }
+    .right-100{
+        transform: rotate(-160deg) translateX(-90);
+    }
+    </style>
+</head>
+<body>
+    <main id="content">
+        <figure><img class="left-50" src="https://picsum.photos/300/600?images=222"></figure>
+        <figure><img class="right-100" src="https://picsum.photos/500/400?images=202"></figure>
+        <figure><img class="left-80" src="https://picsum.photos/800/200?images=252"></figure>
+        <figure><img class="right-100" src="https://picsum.photos/200/200?images=122"></figure>
+        <figure><img class="left-30" src="https://picsum.photos/300/100?images=22"></figure>
+
+    </main>
+
+</body>
+</html>
